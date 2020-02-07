@@ -4,6 +4,7 @@
 */
 function mostrar()
 {
-
+	var
+   
 }
 
