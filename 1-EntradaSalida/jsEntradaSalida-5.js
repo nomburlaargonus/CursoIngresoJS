@@ -6,13 +6,14 @@ function mostrar()
 	var edadPersona;
 
 	nombrePersona = document.getElementById('elNombre').value;
-	nombrePersona = parsenInt (nombrePersona);
+	//nombrePersona = parsenInt (nombrePersona);
+	console.log(nombrePersona);
 
 	edadPersona = document.getElementById('laEdad').value;
 	edadPersona = parsenInt (edadPersona);
 
-
-	alert("sunombre es "+ nombrePersona " y su edad es "+ edadPersona);
+    
+	alert("su nombre es " + nombrePersona " y su edad es " + edadPersona);
 	//NO FUNCIONA
 }
 

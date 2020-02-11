@@ -6,12 +6,18 @@ function mostrarAumento()
 {
 	var monto;
 	var aumento;
- 	//var
+ 	var porciento;
 
-	monto = Descuent.getElementById('importe').value;
+ 	porciento = 25;
+
+	monto = document.getElementById('importe').value;
 	monto = parseInt(monto);
 	console.log(monto);
+
+	aumento = monto * porciento/100;
     
     resultado = monto + aumento;
+
+  document.getElementById('resultado').value = resultado
     
 }

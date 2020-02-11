@@ -4,7 +4,18 @@
 */
 function mostrar()
 {
-	var
+	var pregunta;
+
+	pregunta = "porfavor ingrese su edad";
+
+	pregunta = prompt(pregunta);
+
+	
+
+  
+   document.getElementById('elNombre').value = pregunta
+
+
    
 }
 
