@@ -22,7 +22,7 @@ function Rectangulo ()
 
     multiplicarElancho = anchoT * 3;
 
-    alert("Se necesita " + multiplicarElLargo " para el largo y se necesita" + multiplicarElancho " para el ancho");
+    alert("Se necesita " + multiplicarElLargo);
 
 }
 function Circulo () 
