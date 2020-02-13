@@ -22,16 +22,25 @@ function Rectangulo ()
 
     multiplicarElancho = anchoT * 3;
 
-    alert("Se necesita " + multiplicarElLargo );
+    alert("Se necesita " + multiplicarElLargo + " metros de largo y " + multiplicarElancho + " metros de ancho" );
 
 }
 function Circulo () 
 {
     var radioT;
+    var diametro;
+    var cantidadDeAlambre;
 
 
 	radioT = document.getElementById('Radio').value;
     radioT = parseInt (radioT);
+
+    diametro = radioT * 2;
+
+    cantidadDeAlambre = diametro * 3;
+
+    alert("se necesitan " + cantidadDeAlambre + " metros para alambrar")
+
 	
 }
 function Materiales () 
