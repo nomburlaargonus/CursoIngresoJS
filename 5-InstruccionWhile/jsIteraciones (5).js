@@ -3,8 +3,11 @@ function mostrar()
 var sexo;
 sexo = prompt("ingrese f ó m .");
 
-while(sexo == "f")
+while(sexo=="f" && sexo=="m")
 {
+	numero = prompt ("Sexo no valido");
+    numero = parseInt(numero);
+	
     
 }
 

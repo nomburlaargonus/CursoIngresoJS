@@ -1,15 +1,17 @@
 function mostrar()
 {
    
-	var numero = prompt("ingrese un número entre 0 y 10.");
+	var numero;
+	numero = prompt("colque un numero del 0 al 10.");
     numero = parseInt(numero);
 
-	switch (numero<0 || numero > 10)
+	while (numero<0 || numero > 10)
 	{
           numero = prompt ("Este numero no corresponde");
           numero = parseInt(numero);
 	}
 
+document.getElementById('Numero').value=sexo;
 
 //PROBLEMAS CON EL PROMPT
 
