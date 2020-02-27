@@ -9,5 +9,48 @@ F.	Nacionalidad, “A” para argentinos, “E” para extranjeros, “N” para
  */
 function ComenzarIngreso () 
 {
- 
+	var edad;
+	var sexo;
+	var estadoCivil;
+	var sueldoBruto;
+	var lejado;
+	var nacionalidad;
+
+
+    
+	edad = prompt("1. Porfavor coloque su edad para validar");
+	edad = parseInt(edad);
+
+	while(isNaN(edad)) //esto es para declara que es un error si coloca algo mas ademas de un numero
+        {
+        	edad = prompt ("Solo ingresas numeros");
+        	edad = parseInt(edad);
+        }
+
+	while (edad < 18)
+	{
+	    alert ("USTED ES MENOR DE EDAD");
+	    edad = prompt("1. Porfavor coloque su edad para validar");
+	    edad = parseInt(edad);
+    
+        while(edad > 90) 
+        	{
+        		alert("USTED ES DAMACIADO MAYOR");
+        		edad = prompt("1. Porfavor coloque su edad para validar");
+	            edad = parseInt(edad);
+        	}
+    }    
+
+    document.getElementById('Edad').value=edad;  
+
+    sexo = prompt("2. Porfavor coloque su sexo para validar");
+    console.log(sexo);
+
+    while(sexo=="f" && sexo=="m")
+    {
+	sexo = prompt ("Sexo no valido");
+	sexo = prompt("Porfavor coloque su sexo para validar");
+    }
+
+    document.getElementById('Sexo').value=sexo;
 }
