@@ -1,17 +1,56 @@
 function mostrar()
 {
-	//tomo la edad  
-	 var edad;
+	var bolsas;
+	var kilosBolsas;
+	var cantidadBolsas;
+	var importeBolsas;
+	var marca;
 
-	 edad = document.getElementById('edad').value;
-	 edad= parseInt(edad);
+	var respuesta;
+	respuesta = "si";
 
-	 if(edad == 15)
-	 {
-	 	alert("niña bonita");
-	 }
+	while (respuesta == "si")
+	{
+		marca = prompt("Por favor ingrese la marca de comida para animales");
+		while(!isNaN(marca))
+		{
+			marca = prompt("Por favor ingrese la marca de comida para animales");
+		}
 
-		//todo es verdadero ( 1, true, "cualquiera", 1 infinito, -1 -infinito), hasta que especificamente declaremos falso ( 0 , false)
+
+
+		kilosBolsas=prompt("Por Favor, Ingrese El Peso Del Producto");
+		kilosBolsas=parseInt(kilosBolsas); 
+		while(isNaN(kilosBolsas))
+		{
+			kilosBolsas = prompt("Por Favor, Ingrese El Peso Del Productos");
+		    kilosBolsas=parseInt(kilosBolsas);
+		}
+
+
+		cantidadBolsas = prompt ("porfavor ingrese la cantidad de bolsas que quiere");
+		cantidadBolsas = parseInt(cantidadBolsas);
+		while(isNaN(cantidadBolsas))
+		{
+			cantidadBolsas = prompt("porfavor ingrese la cantidad de bolsas que quiere");
+			cantidadBolsas = parseInt(cantidadBolsas);
+		}
+
+
+		importeBolsas = prompt ("porfavor coloque el precio de la una bolsa de comida");
+		importeBolsas = prompt ("importeBolsas");
+		while(isNaN(importeBolsas))
+		{
+			importeBolsas = prompt("porfavor coloque el precio de la una bolsa de comida");
+			importeBolsas = prompt ("importeBolsas");
+		}
+
+
+
+
+      respuesta = prompt("desia hacer otro pedido? si/no");
+	}
+ 
 	
 
 }//FIN DE LA FUNCIÓN
